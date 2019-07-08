@@ -54,3 +54,6 @@ dkms.conf
 
 ### Code ###
 .vscode/
+
+### Test Outputs, Notes ####
+*.txt

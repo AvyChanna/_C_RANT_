@@ -146,9 +146,11 @@ int main()
 {
 	// TODO - Make docs
 	// TODO - Add data validation
-	printf("COLLABS-\n%s\n\n", get_collabs(SORT_BY_ALGO, 0, 0));
+	// stopship
+	curl_global_init(CURL_GLOBAL_ALL);
+	// printf("COLLABS-\n%s\n\n", get_collabs(SORT_BY_ALGO, 0, 0));
 	// printf("RANTS-\n%s\n\n", get_rants(SORT_BY_ALGO, RANGE_ALL, 1, 0));
-	// printf("RANT2168836-%s\n\n", get_rant(2168836));
+	// printf("RANT 226724-%s\n\n", get_rant(226724));
 	// printf("SURPRISE-\n%s\n\n", get_surprise());
 	// printf("SEARCH \"fuch-off\"-\n%s\n\n", search_rant("fuck off"));
 	// printf("STORY-\n%s\n\n", get_story_rants(SORT_BY_ALGO, RANGE_ALL, 1, 0));
@@ -157,6 +159,7 @@ int main()
 	// printf("WEEKLY RANTS-\n%s\n\n", get_weekly_rants(128, SORT_BY_ALGO, 1, 0));
 	// printf("USER ID-\n%s\n\n", get_user_id("AvyChanna"));
 	// printf("USER INFO-\n%s\n\n", get_user_info(714135, CONTENT_ALL, 0));
+	curl_global_cleanup();
 	return 0;
 }
 
